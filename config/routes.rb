@@ -3,6 +3,10 @@ Rails.application.routes.draw do
     get :subjects
   end
 
+  resources :teachers do 
+    
+  end
+
   get '/reports/subjects', to: 'reports#subjects'
 
   root 'students#index'
