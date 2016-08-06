@@ -3,7 +3,7 @@ crumb :root do
 end
 
 crumb :students do
-  link "All students", students_path
+  link "Students", students_path
 end
 
 crumb :student do |student|
