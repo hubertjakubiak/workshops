@@ -2,7 +2,7 @@ crumb :root do
   link 'RoR Workhops', root_path
 end
 
-crumb :student do |student|
+crumb :students do |student|
   link "#{student.first_name} #{student.last_name}", student_path(student)
   parent :students
 end
