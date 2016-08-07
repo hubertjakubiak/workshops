@@ -3,6 +3,6 @@ rvm:
 before_script:
   - psql -c 'create database workshops_test;' -U postgres
   - psql -c "CREATE USER workshops WITH PASSWORD '1workshops2';" -U postgres
-  - psql -c "ALTER DATABASE workshops_test OWNER TO "workshops;" -U postgres
+  - psql -c "ALTER DATABASE workshops_test OWNER TO workshops;" -U postgres
 addons:
   postgresql: '9.3'
