@@ -1,7 +1,9 @@
 namespace :sample_data do
 
+  require 'faker'
+  
   task :faker => :environment do
-    require 'faker'
+    
 
     puts "Seeds: start"
     TEACHER_TITLES = %w(Dr. Prof. TA)
