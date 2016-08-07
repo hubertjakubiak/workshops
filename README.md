@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hubertjakubiak/workshops.svg?branch=master)](https://travis-ci.org/hubertjakubiak/workshops)
+
 RoR Workshops
 ================
 
