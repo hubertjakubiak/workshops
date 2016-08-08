@@ -1,7 +1,7 @@
 = simple_form_for payment do |f|
   = f.association :student, value_method: :id, prompt: 'Select student', :label_method => lambda { |student| "#{student.decorate.full_name}" }
   = f.input :amount
-  = f.input :date, as: :date, start_year: Date.today.year - 16, end_year: Date.today.year, order: [:day, :month, :year] , prompt: {year: 'Select year', day: 'Select day', month: 'Select month'}
+  = f.input :date, as: :string, input_html: {type: :date}
   = f.input :description
   = link_to t('shared.back'), students_path, class: 'btn btn-default'
   = f.button :submit
