@@ -11,6 +11,6 @@ feature 'User checks student datebirth' do
   end
 
   scenario do
-      expect(page).to have_content '1997-08-01'
+      expect(page).to have_content '1997-08_01'
   end
 end

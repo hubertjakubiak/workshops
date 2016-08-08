@@ -17,9 +17,9 @@ class StudentDecorator < BaseDecorator
   def date_of_birth
 
     if object.birthdate
-      "#{birthdate}"
+      "#{birthdate.strftime("%Y-%m_%d")}"
     else
-      "No information"
+      "No data"
     end
 
   end
