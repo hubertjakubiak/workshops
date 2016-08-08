@@ -20,4 +20,4 @@
 
 $(document).on 'page:change', ->
 
-  $('#payments').dataTable()
+  $('#payments').dataTable "aoColumnDefs": [ { "bSortable": false, "aTargets": [ -1 ] } ]
