@@ -1,0 +1,20 @@
+- breadcrumb :payment, payment
+%table.table.table-condensed
+  %tbody
+    %tr
+      %td= "#{t('payment.columns.first_name')}:"
+      %td= payment.student.first_name
+    %tr
+      %td= "#{t('payment.columns.last_name')}:"
+      %td= payment.student.last_name
+    %tr
+      %td= "#{t('payment.columns.amount')}:"
+      %td= payment.amount
+    %tr
+      %td= "#{t('payment.columns.description')}:"
+      %td= payment.description
+    %tr
+      %td= "#{t('payment.columns.date')}:"
+      %td= payment.date
+
+= link_to t('shared.back'), payments_path, class: 'btn btn-default'

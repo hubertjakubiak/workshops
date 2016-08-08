@@ -6,6 +6,15 @@ crumb :students do
   link "Students", students_path
 end
 
+crumb :payments do
+  link "Payments", payments_path
+end
+
+crumb :payment do |payment|
+  link "ID: #{payment.id}", payment_path(payment)
+  parent :payments
+end
+
 crumb :student do |student|
   link "#{student.first_name} #{student.last_name}", student_path(student)
   parent :students

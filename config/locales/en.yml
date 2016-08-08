@@ -34,3 +34,10 @@ en:
       full_name: Full name
       avg_notes: Notes avarange
       birthdate: Date of birth
+  payment:
+    columns:
+      first_name: first name
+      last_name: last name
+      amount: amount
+      description: description
+      date: date

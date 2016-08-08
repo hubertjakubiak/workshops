@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'payments/new'
+
   devise_for :users, controllers: { registrations: "registrations" }
 
   resources :students do
     get :subjects
   end
+
+  resources :payments
 
   resources :teachers do 
     get :subjects
