@@ -11,14 +11,14 @@ User.create!(email: 'admin@admin.com',password: 'adminadmin')
 end
 
 teachers = Teacher.all
-5.times do
+20.times do
   SubjectItem.create!(
     title: Faker::Lorem.sentence,
     teacher: teachers.sample
   )
 end
 
-25.times do
+40.times do
   Student.create!(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name

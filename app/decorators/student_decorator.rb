@@ -13,4 +13,14 @@ class StudentDecorator < BaseDecorator
       return "#{format("%.2f", average)}"
     end
   end
+
+  def date_of_birth
+
+    if object.birthdate
+      "#{birthdate}"
+    else
+      "No information"
+    end
+
+  end
 end
