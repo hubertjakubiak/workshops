@@ -4,11 +4,13 @@ RSpec.describe Student do
   describe 'validations' do
     it { is_expected.to validate_presence_of :first_name }
     it { is_expected.to validate_presence_of :last_name }
+    it { is_expected.not_to validate_presence_of :birthdate }
   end
 
   describe 'database columns' do
     it { should have_db_column :first_name }
     it { should have_db_column :last_name }
+    it { should have_db_column :birthdate }
   end
 
   describe 'associations' do
