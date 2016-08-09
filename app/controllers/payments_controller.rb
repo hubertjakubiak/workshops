@@ -1,8 +1,8 @@
 class PaymentsController < ApplicationController
 
-  expose :payments
+  expose(:payments) { Payment.includes(:student) }
   expose(:payment, attributes: :payment_params)
-  expose(:student_payments) { student.payments }
+  expose(:payment_student) { payment.student }
 
 
   def create
